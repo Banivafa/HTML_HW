@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Weather Analysis</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class= "box box-right">
+            <a class="navbar-brand" href="#">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="maxTemprature.html">Max Temprature</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="windSpeed.html">Wind Speed</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+    <div class="container">
+        <div class="row row-grid">
+            <div class="col-md-8">
+                <div class="box box-left">
+                    <section id="summary">
+                        <h1> Cloudiness </h1>
+                        <hr>
+                        <figure>
+                            <a target="_blank" href="LatvsCloud.png">
+                                <img id="viz-main" src="LatvsCloud.png" alt="Latitude vs Cloudiness">
+                            </a>
+                        </figure>
+
+                        <section id="paragraph">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum, convallis laoreet nostra 
+                                    cubilia ac eu dictumst, lobortis fringilla gravida per placerat congue vitae. Malesuada congue dis 
+                                    faucibus neque turpis eu habitant, ultrices porttitor posuere dictum quis ante nulla interdum, 
+                                    sapien maecenas est nec tempor condimentum. Curabitur pharetra pulvinar quisque quis interdum libero.
+                                 </p>
+
+                                 <p>
+                                        neque semper ultrices platea fermentum bibendum per molestie. Per id morbi cursus inceptos
+                                         facilisi praesent nisl quam vel, ligula ridiculus augue suscipit quis porta porttitor imperdiet, 
+                                         tincidunt in litora nunc habitant senectus mollis pharetra. Pulvinar himenaeos tellus velit ridiculus.
+                                
+                                </p>
+
+                            <ul>
+                                <li>Temperature vs. Latitude</li>
+                                <li>Humidity vs. Latitude</li>
+                                <li>Cloudiness vs. Latitude</li>
+                                <li>Wind Speed vs. Latitude</li>
+
+                            </ul>
+
+                        </section>
+
+                    </section>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="box box-right">
+                  <div class="container">
+                    <h2>Visualizations</h2>
+                    <hr>
+
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="temp.html">
+                                    <img id="landing-viz" src="LatvsHum.png" alt="Latitude vs. Humidity">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="maxTemprature.html">
+                                    <img id="landing-viz" src="LatvsTemp.png" alt="Latitude vs. Temperature">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="windSpeed.html">
+                                    <img id="landing-viz" src="LatvsWind.png" alt="Latitude vs. Wind Speed">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                            <figure>
+                                <a href="cloudiness.html">
+                                    <img id="landing-viz" src="LatvsCloud.png" alt="Latitude vs. Cloudiness">
+                                </a>
+                            </figure>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
